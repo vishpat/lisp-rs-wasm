@@ -1,5 +1,5 @@
 import './App.css';
-import init, {eval_lisp_prg} from 'wasm-lib';
+import init, { eval_lisp_prg } from 'wasm-lib';
 import { useEffect, useState } from 'react';
 
 function App() {
@@ -13,16 +13,28 @@ function App() {
         console.log("UseEffect: Setting result", r);
         setResult(r);
       }
-    }) 
+    })
   }, []);
 
   const getResult = () => {
-    
+
     init().then(() => {
-      console.log("Button Click: Getting result for", input);
-      let r = eval_lisp_prg(input);
-      console.log("Button Click: Setting result to", r);
-      setResult(r);
+      if (input) {
+        var prog_input = input;
+        if (input.length > 4 && input[0] == '(' && input[1] != '(' && 
+            input[input.length - 1] == ')' && input[input.length - 2] != ')') {
+          prog_input = '(' + input + ')';
+        } 
+
+        console.log("Button Click: Getting result for", prog_input);
+        let r = eval_lisp_prg(prog_input);
+        console.log("Button Click: Setting result", r);
+        var final_result = r;
+        if (r && r[0] == '(' && r[r.length - 1] == ')') {
+          final_result = r.substring(1, r.length - 1);
+        }
+        setResult(final_result);
+      }
     });
   };
 
@@ -33,9 +45,9 @@ function App() {
 
   return (
     <div className="App">
-      <textarea onChange={updateInput}/>
+      <textarea onChange={updateInput} />
       <h4> {result}</h4>
-    <button onClick={getResult}>Get Result</button>       
+      <button onClick={getResult}>Get Result</button>
     </div>
   );
 }
