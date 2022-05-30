@@ -1,6 +1,7 @@
 import './App.css';
 import init, { eval_lisp_prg } from 'wasm-lib';
 import { useEffect, useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   const [result, setResult] = useState();
@@ -45,9 +46,20 @@ function App() {
 
   return (
     <div className="App">
-      <textarea onChange={updateInput} />
-      <h4> {result}</h4>
-      <button onClick={getResult}>Get Result</button>
+      <div className="container">
+        <h1>Lisp Interpreter in the browser using WASM</h1>
+        <p>This webpage runs a <a href="https://webassembly.org/"> WASM </a> Lisp Interpreter in the browser. 
+        The interpreter was written in <a href="https://www.rust-lang.org">Rust</a> and it's 
+          implementation can found <a href="http://github.com/vishpat/lisp-rs">here.</a></p>
+      </div>
+      <div className="container">
+        <textarea rows="10" columns="20" className="form-control" onChange={updateInput} />
+      </div>
+      <div className="container-fluid">
+        <h4> {result}</h4>
+        <button class="btn btn-primary" onClick={getResult}>Get Result</button>
+      </div>
+
     </div>
   );
 }
