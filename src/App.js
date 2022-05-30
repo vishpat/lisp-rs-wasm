@@ -45,7 +45,7 @@ function App() {
         <h1>Lisp Interpreter in a browser using WASM</h1>
         <div className="alert alert-secondary" role="alert">
         <p align="left">This webpage hosts a Lisp Interpreter in a browser. 
-        The interpreter was written in <a href="https://www.rust-lang.org">Rust</a> and compiled to <a href="https://webassembly.org/"> WASM </a>.
+        The interpreter is written in <a href="https://www.rust-lang.org">Rust</a> and compiled to <a href="https://webassembly.org/"> WASM </a>.
           The implementation of the interpreter can found <a href="http://github.com/vishpat/lisp-rs">here.</a> 
           The source code for the WASM bindings and this webapp can be found <a href="https://github.com/vishpat/lisp-rs-wasm">here.</a>  
           You can run the Lisp programs by typing in the code in the textbox below. Information 
