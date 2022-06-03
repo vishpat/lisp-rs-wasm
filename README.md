@@ -13,6 +13,7 @@ npm run build:wasm
 ## WebApp
 
 ```
+npm install
 npm run build
 ```
 
