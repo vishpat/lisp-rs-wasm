@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/lisp-rs-wasm/static/css/main.0b4e74b4.css",
+    "main.js": "/lisp-rs-wasm/static/js/main.540bc279.js",
+    "static/js/787.98833df2.chunk.js": "/lisp-rs-wasm/static/js/787.98833df2.chunk.js",
+    "static/media/wasm_lib_bg.wasm": "/lisp-rs-wasm/static/media/wasm_lib_bg.51de3feba38ee1e2a14e.wasm",
+    "index.html": "/lisp-rs-wasm/index.html",
+    "main.0b4e74b4.css.map": "/lisp-rs-wasm/static/css/main.0b4e74b4.css.map",
+    "main.540bc279.js.map": "/lisp-rs-wasm/static/js/main.540bc279.js.map",
+    "787.98833df2.chunk.js.map": "/lisp-rs-wasm/static/js/787.98833df2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0b4e74b4.css",
+    "static/js/main.540bc279.js"
+  ]
+}
