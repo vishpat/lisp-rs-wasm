@@ -22,9 +22,9 @@ checksum = "e2abad23fbc42b3700f2f279844dc832adb2b2eb069b2df918f455c4e18cc646"
 
 [[package]]
 name = "lisp-rs"
-version = "0.3.1"
+version = "0.3.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "853a2e92188718e5e1070317f036cdb8d10a2a407ad8a3e08bc82600c37c0c37"
+checksum = "808a7f355b6495873be98335003e99542cce7cd58f6fae67c349913b910094f7"
 
 [[package]]
 name = "log"
