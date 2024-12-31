@@ -10,5 +10,5 @@ crate-type = ["cdylib"]
 
 
 [dependencies]
-lisp-rs = "0.3.5"
+lisp-rs = "2.0.2"
 wasm-bindgen = "0.2.78"
